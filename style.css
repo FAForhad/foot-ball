@@ -5,17 +5,19 @@ body{
     margin: 0 auto;
     padding: 0;
     color: aliceblue;
-    background-color: rgba(0, 0, 0, 0.952);
+    background-color: rgba(0, 0, 0, 0.945);
     font-family: 'Poppins', sans-serif;
 }
-/* ---------------------------
-          hover part
---------------------------- */
+/* --------------------------------
+          hover, transition part
+--------------------------------- */
 .groups-matchs:hover{
+    color: rgb(155, 102, 102) ;
     background-color:rgb(0, 0, 0) ;
 }
 .button-live:hover{
-    background-color: rgb(0, 0, 0);
+    width: 200px;
+    background-color: rgb(117, 5, 5);
 }
 .club-info a:hover{
     color: rgb(155, 102, 102);
@@ -31,6 +33,15 @@ body{
     margin-top: 60px;
     justify-content: center;
 }
+.button-live{
+    transition: width 1.5s, background-color 3s ease-out;
+    width: 100px;
+    color:rgb(240, 253, 255);
+    text-decoration: none;
+    background-color: rgb(73, 25, 25);
+    padding: 16px;
+    border-radius: 7px;
+}
 .title-sheet{
     display: flex;
     justify-content: space-around;
@@ -38,21 +49,14 @@ body{
     background-color: rgb(24, 10, 10);
     border-radius: 50px;
     width: 85%;
-    
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);  
 }
 .title-form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.button-live{
-    width: 100px;
-    color:rgb(240, 253, 255);
-    text-decoration: none;
-    background-color: rgb(83, 42, 42);
-    padding: 16px;
-    border-radius: 7px;
-}
+
 .titles{
     font-size: 70px
 }
@@ -69,6 +73,8 @@ body{
     background-color: rgb(24, 10, 10);
     margin: 35px;
     border-radius: 20PX;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    border-radius: 10PX;
 }
 .bar-list{
     display: flex;
@@ -148,6 +154,7 @@ body{
     background-color:rgb(24, 10, 10);
     margin-top: 10%;
     text-align: center;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
 }
 hr{
     width: 80%;
@@ -164,9 +171,24 @@ hr{
     font-size: 15px;
     text-decoration: none;
 }
-/*---------------------------------
-             matchs part html 
------------------------------------*/
+.button-single {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+    margin: 50px 45%;
+    background-color: rgb(49, 16, 16);
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+.button-single a{
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+/*---------------------------------------------
+             matchs part html 2nd part
+----------------------------------------------*/
 .team-flag{
     border-radius: 5px;
     display: flex;
@@ -220,5 +242,8 @@ hr{
     .transfer-talks{
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .button-single{
+        display: inline-block;
     }
 }
