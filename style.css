@@ -231,6 +231,10 @@ hr{
         }
 }
 @media screen and (min-width:689px) and (max-width:1200px){
+    .title-sheet{
+        width: 95%;
+        
+    }
     .daily-news{
         display: inline;
     }
