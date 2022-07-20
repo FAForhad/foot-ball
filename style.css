@@ -197,7 +197,7 @@ hr{
 
 }
 .team-flag img{
-    width: 100%;
+    width: 45%;
 }
 .vs{
     color: yellow;
@@ -229,6 +229,9 @@ hr{
         .connections{
             display: inline;
         }
+        .team-flag img{
+            width: 45%;
+        }
 }
 @media screen and (min-width:689px) and (max-width:1200px){
     .title-sheet{
@@ -249,5 +252,8 @@ hr{
     }
     .button-single{
         display: inline-block;
+    }
+    .team-flag img{
+        width: 45%;
     }
 }
